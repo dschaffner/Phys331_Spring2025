@@ -10,4 +10,5 @@ from typing import Tuple
 
 @validate_quantities
 def hooks_force(displacement: u.Quantity[u.m], spring_constant: u.Quantity[u.N/u.m]) -> u.Quantity[u.N]:
+    print("hello, world")
     return -displacement*spring_constant
